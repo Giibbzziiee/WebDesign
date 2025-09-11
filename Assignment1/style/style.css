@@ -5,7 +5,7 @@ h1 {
   background-color: tan;
 }
 
-h2, h3 {
+h2, h3, h4{
   text-align: center;
 }
 
@@ -15,3 +15,10 @@ body {
 
 p { max-width: 55%;
 margin: 1 auto; }
+
+.left {
+  text-align: left;
+}
+
+.right {text-align: right;
+}
