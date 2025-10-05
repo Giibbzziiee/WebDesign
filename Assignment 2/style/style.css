@@ -16,6 +16,13 @@ p {
     text-align: center;
     line-height: 1.4;
 }
+
+p2 {
+    max-width: 55%;
+    margin: 1em auto;
+    text-align: left;
+    line-height: 1.4;
+}
 header {
     display: flex;
     justify-content: space-between;
