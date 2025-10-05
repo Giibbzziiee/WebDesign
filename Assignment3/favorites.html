@@ -4,27 +4,75 @@
         <meta charset="UTF-8">
         <title>The Subtle Art of Not Giving a F***</title>
         <link rel="stylesheet" href="style/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
     </head>
-    
+
+    <h2>My Favorite Books</h2>
+     <table>
+      <thead>
+      <tr>
+       <th>Title</th>
+       <th>Author</th>
+       <th>Genre</th>
+      </tr>
+      </thead>
+      <tbody>
+        <tr>
+         <td>The Subtle Art of Not Giving a F***</td>
+         <td>Mark Manson</td>
+         <td>Life Style</td>
+        </tr>
+      </tbody>
+     </table>
+
     <nav>
-        <!--Nav Section-->
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="info.html">Info</a></li>
+            <li><a href="favorites.html">Survey</a></li>
         </ul>
     </nav>
 
-    <body>
+<body>
 
-<!--Content Here-->
+ <form>
+  <fieldset>
+   <legend>Favorite Book Survey</legend>
+  
+   <label>Name:</label>
+    <input type="text" name="name" placeholder="e.g. John Doe">
 
-<form>
-  <label>Submit Your Favorite Book:</label>
-  <input type="text" name="favorite-book" placeholder="Type your favorite book here">
+   <label>Email Address:</label>
+    <input type="email" name="email" placeholder="e.g. username@gmail.com">
 
-  <button type="submit">Submit</button>
-</form>
+   <label>Submit Your Favorite Book:</label>
+    <input type="text" name="favorite-book" placeholder="Type your favorite book here">
+
+   <label>Favorite Genre:</label>
+    <select name="genre">
+     <option value="classic">Classic</option>
+     <option value="fantasy">Fantasy</option>
+     <option value="sci-fi">Sci-Fi</option>
+     <option value="romance">Romance</option>
+     <option value="horror">Horror</option>
+    </select>
+
+   <p>Perferred Format:</p>
+    <label><input type="radio" name="format" value="print">Print</label>
+    <label><input type="radio" name="format" value="ebook">eBook</label>
+    <label><input type="radio" name="format" value="audiobook">Audiobook</label>
+
+   <label>
+    <input type="checkbox" name="subscribe" value="yes">
+   Subscribe to our monthly book club newsletter
+   </label>
+
+   <button type="submit">Submit</button>
+  </fieldset>
+ </form>
 
 </body>
 </html>
