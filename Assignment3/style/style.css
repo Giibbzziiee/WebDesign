@@ -12,6 +12,10 @@ body {
   font-family: 'michroma', serif;
 }
 
+nav {
+    text-align: center;
+}
+
 h2, h3, h4{
   text-align: center;
 }
@@ -21,6 +25,7 @@ p {
     margin: 1em auto;
     text-align: center;
     line-height: 1.4;
+    letter-spacing: normal;
 }
 header {
     display: flex;
@@ -29,6 +34,8 @@ header {
     border: 1px solid #000000;
     padding: 35px;
     background-color: #fffdfa;
+    opacity: 70%;
+    box-shadow: #0014c4;
 }
 
 div {
@@ -40,9 +47,9 @@ div {
 li{
     list-style-type:none;
     color:#0014c4;
-    display:inline-block;
+    display:block;
     font-family:Georgia, serif;
-    margin: 0 10px;
+    margin: 10px 0;
 }
 
 .comments {
@@ -70,6 +77,24 @@ li{
 
 .logo img {
     max-width: 120px;
+    height: auto;
+}
+
+.photogrid { /*This is what I did instead of the gallery ID. I hope that's okay. I think it did the same thing unless I missed something in the lesson,
+    I also ended up covering this on my own a little bit over the last lessons. I was kind of confused this time around working through my own code but
+    I think I figured out where most of my issues were arising and worked through it.*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-width: 3000px;
+    margin: 0 auto;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.photogrid img{
+    width:30%;
     height: auto;
 }
 
@@ -166,4 +191,17 @@ th {
   background-color: #f5f5f5; 
   font-weight: bold; 
   color: #5a3e36;
+}
+
+
+
+/*Media Queries*/
+
+
+
+@media (max-width: 600px) {
+}
+
+header, .chapters, footer {
+    padding: 10px;
 }
