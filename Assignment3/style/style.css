@@ -12,12 +12,27 @@ body {
   font-family: 'michroma', serif;
 }
 
-nav {
-    text-align: center;
+h1 {
+  text-shadow: 2px 2px 6px turquoise;
 }
 
 h2, h3, h4{
   text-align: center;
+}
+
+.video-embed {
+  position: relative;
+  width: min(80%, 1000px);
+  margin: 1.5rem auto;
+  aspect-ratio: 16/9;
+}
+
+.video-embed iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 p { 
@@ -47,7 +62,6 @@ div {
 li{
     list-style-type:none;
     color:#0014c4;
-    display:block;
     font-family:Georgia, serif;
     margin: 10px 0;
 }
@@ -96,6 +110,27 @@ li{
 .photogrid img{
     width:30%;
     height: auto;
+}
+
+.hero {
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  isolation: isolate;
+}
+
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(.75);
+  pointer-events: none;
 }
 
 .chapters {
@@ -193,7 +228,17 @@ th {
   color: #5a3e36;
 }
 
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 1px;
+  margin: 0;
+}
 
+nav li {
+  display: inline;
+}
 
 /*Media Queries*/
 
