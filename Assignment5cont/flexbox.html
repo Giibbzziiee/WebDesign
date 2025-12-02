@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="A personal website designed to showcase work, ideas, and personality.">
+            <title>Food from E-Bay – Flexbox Layout</title>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+            <link rel="stylesheet" href="style/style.css">
+            <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        </head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg sticky-top main-nav" data-bs-theme="dark">
+  <div class="container-fluid">
+
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="images/favicon.ico" class="nav-logo me-2" alt="Food from E-Bay logo">
+      <span class="brand-text">Food from E-Bay</span>
+    </a>
+
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <ul class="navbar-nav ms-4 me-auto mb-2 mb-lg-0 nav-links">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="grid.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="blog-post.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="template.html">Template Page</a></li>
+        <li class="nav-item"><a class="nav-link disabled">(WIP)</a></li>
+      </ul>
+
+      <div class="d-flex align-items-center nav-right">
+        <form class="d-flex nav-search" role="search"
+              action="https://www.google.com/search" method="get" target="_blank">
+          <label class="visually-hidden" for="site-search">Search this site</label>
+          <input id="site-search" class="form-control nav-search-input" type="search"
+                 name="q" placeholder="Search">
+          <input type="hidden" name="sitesearch" value="giibbzziiee.github.io">
+          <button class="btn nav-search-btn" type="submit">&#128269;</button>
+        </form>
+            <ul class="navbar-nav ms-4 me-auto mb-2 mb-lg-0 nav-links">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Contact &amp; More</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="about.html">About</a></li>
+            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item active" href="flexbox.html">Flexbox Layouts</a></li>
+            </ul>
+          </ul>
+        </li> 
+      </div>
+    </div>
+  </div>
+</nav>
+
+<header>
+    <h1>Flex Boxes</h1>
+</header>
+
+<div class="page-wrapper">
+
+<main>
+    <div class="card-section"> 
+        <div class="card">
+            <img src="images/HacksawRidge.jpg">
+            <h3>I made this last semester</h3>
+            <p>Probably one of my most favorited war movies. Desmond Doss is incredible.<br>Enjoy.</p>
+        </div>
+
+
+        <div class="card">
+            <img src="images/glogo.png">
+            <h3>Wordy Words</h3>
+            <p>So many words, so little thought.<br>This is my logo for like... everything currently. It's a new rendition of one I did in the past.
+            <br>This was made around the 7th of November, 2025.<br><br><br>Side note, these three panels were made using the card component we covered in
+            this web-design project.</p>
+        </div>
+
+        <div class="card">
+            <img src="images/PulpFiction.jpg">
+            <h3>Another prior project</h3>
+            <p>Same class last year, same project.<br> Also, another one of my favorite movies.</p>
+        </div>
+
+    </div>
+
+<div class="blog-preview">
+
+    <img src="images/DropCakeShipping.png" alt="A squished cake box from the Food from E-Bay series.">
+
+
+    <div class="blog-text">
+        <p class="date">October 30, 2025</p>
+
+        <h2 class="post-title">Lining Up the Disaster with Flexbox</h2>
+
+        <p class="post-preview">
+            This layout uses Flexbox to keep the Food from E-Bay images and descriptions on the same row, no matter how odd
+            the subject matter is. The container is set to <code>display: flex</code>, which lets the image and text sit side
+            by side with consistent spacing and alignment.
+        </p>
+
+        <p class="post-preview">
+            Flexbox replaces the older float-based approach and makes it easier to center content, control gaps, and stack
+            elements vertically on smaller screens without completely rebuilding the HTML.
+        </p>
+
+        <a href="blog-post.html" class="read-more">Read more about the project</a>
+    </div>
+</div>
+
+<div class="blog-preview">
+    <img src="images/PepperoniOliveMail.png" alt="A pizza-themed mailer box labeled Pepperoni Olive Mail.">
+
+    <div class="blog-text">
+        <p class="date">October 30, 2025</p>
+
+        <h2 class="post-title">Keeping Product Rows Flexible</h2>
+
+        <p class="post-preview">
+            In a real online shop, product cards need to stay balanced as the viewport changes. Here, Flexbox lets each Food
+            from E-Bay “product” grow or shrink while keeping the text grouped with its image, which keeps the layout from
+            collapsing as the window narrows.
+        </p>
+
+        <p class="post-preview">
+            Properties like <code>gap</code>, <code>align-items</code>, and <code>flex-direction</code> help control how
+            these strange grocery boxes line up, so the page still feels intentional even if the food feels questionable.
+        </p>
+
+        <a href="index.html" class="read-more">Back to the homepage</a>
+    </div>
+</div>
+
+<div class="blog-preview">
+    <img src="images/BreadBox.png" alt="A dented bread box from the Food from E-Bay series.">
+
+    <div class="blog-text">
+        <p class="date">October 30, 2025</p>
+
+        <h2 class="post-title">From Single Column to Side-by-Side</h2>
+
+        <p class="post-preview">
+            One of the biggest advantages of Flexbox is how easily a layout can switch from stacked to side-by-side. For this
+            project, the same HTML can support a single-column mobile view and a desktop view where the Food from E-Bay boxes
+            and captions sit next to each other.
+        </p>
+
+        <p class="post-preview">
+            This makes it easier to focus on the visuals and message of the series without getting stuck fighting the layout.
+            Flexbox takes care of the structure so the design can lean into the humor and uneasiness of buying food from e-Bay.
+        </p>
+
+        <a href="grid.html" class="read-more">See how Grid handles the gallery</a>
+    </div>
+</div>
+
+</main>
+
+</div>
+
+    <footer class="footer">
+        <p>&copy; <span id="year"></span> Ethan Gibson</p>
+            <script>
+                document.getElementById("year").textContent = new Date().getFullYear();
+            </script>
+        <label for="email">Leave your Email (WIP)</label>
+        <input a=focus type="email" id="email" name="email" placeholder="email@example.com">
+        <div class="social-icons">
+            <img src="images/LogoInstagram.png" alt="Instagram logo">
+            <img src="images/LogoYouTube.png" alt="YouTube logo">
+        </div>
+
+        <ul class="use-cases">
+            <li>Concept Photography</li>
+            <li>Packaging Experiments</li>
+            <li>Fake Product Design</li>
+            <li>Dark Humor Projects</li>
+        </ul>
+
+        <ul class="product">
+            <li>Food from E-Bay Series</li>
+            <li>Behind-the-Scenes Shots</li>
+            <li>Layout Studies</li>
+            <li>Process Sketches</li>
+        </ul>
+
+        <ul class="resources">
+            <li>Flexbox Practice</li>
+            <li>Grid Practice</li>
+            <li>Project Reflection</li>
+            <li>Contact</li>
+        </ul>
+    </footer>
+    
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    </body>
+
+</html>

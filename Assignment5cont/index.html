@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="A personal website designed to showcase work, ideas, and personality.">
+            <title>Food from E-Bay - Home</title>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+            <link rel="stylesheet" href="style/style.css">
+            <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        </head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg sticky-top main-nav" data-bs-theme="dark">
+  <div class="container-fluid">
+
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="images/favicon.ico" class="nav-logo me-2" alt="Food from E-Bay logo">
+      <span class="brand-text">Food from E-Bay</span>
+    </a>
+
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <ul class="navbar-nav ms-4 me-auto mb-2 mb-lg-0 nav-links">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="grid.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="blog-post.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="template.html">Template Page</a></li>
+        <li class="nav-item"><a class="nav-link disabled">(WIP)</a></li> <!--<li class="nav-item"><a class="nav-link" href="nav.html">Nav-Page</a></li>-->
+      </ul>
+
+      <div class="d-flex align-items-center nav-right">
+        <form class="d-flex nav-search" role="search"
+              action="https://www.google.com/search" method="get" target="_blank">
+          <label class="visually-hidden" for="site-search">Search this site</label>
+          <input id="site-search" class="form-control nav-search-input" type="search"
+                 name="q" placeholder="Search">
+          <input type="hidden" name="sitesearch" value="giibbzziiee.github.io">
+          <button class="btn nav-search-btn" type="submit">&#128269;</button>
+        </form>
+            <ul class="navbar-nav ms-4 me-auto mb-2 mb-lg-0 nav-links">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Contact &amp; More</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="about.html">About</a></li>
+            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="flexbox.html">Flexbox Layouts</a></li>
+            </ul>
+          </ul>
+        </li> 
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/Interaction.JPG" class="d-block w-50 mx-auto" alt="A slice of pepperoni pizza stuffed into a manilla envelope."> 
+    </div>
+    <div class="carousel-item">
+      <img src="images/cube.jpg" class="d-block w-auto mx-auto" alt="Cereal in a dilapidated shipping box.">
+    </div>
+    <div class="carousel-item">
+      <img src="images/CerealBox.png" class="d-block w-auto mx-auto" alt="A layered cake in a shipping box.">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<header>
+    <h1>Gibson Media</h1>
+</header>
+
+<div class="page-wrapper">
+
+<main>
+
+<div class="blog-preview">
+    <img src="images/CerealBox.png" alt="A distressed cereal box from the Food from E-Bay series.">
+
+    <div class="blog-text">
+        <p class="date">October 30, 2025</p>
+
+        <h2 class="post-title">Food from E-Bay: Questionable Groceries, Intentional Layout</h2>
+
+        <p class="post-preview">
+            Food from E-Bay is a small photo series built around the idea of ordering sketchy groceries off the internet and
+            treating them like real products. This site uses Flexbox and Grid to turn those odd packages into a clean,
+            organized layout that feels more polished than the food itself.
+        </p>
+
+        <a href="blog-post.html" class="read-more">Read the full project story</a>
+    </div>
+</div>
+
+<div class="blog-preview">
+    <img src="images/BreadBox.png" alt="A loaf of bread in a beat-up shipping box.">
+
+    <div class="blog-text">
+        <p class="date">October 30, 2025</p>
+
+        <h2 class="post-title">Flexbox: Arranging the Strange</h2>
+
+        <p class="post-preview">
+            On the Flexbox page, the Food from E-Bay packages are lined up like a real product row. Flexbox keeps the image
+            and text together, centers everything, and makes sure the layout stays readable even when the content gets weird.
+        </p>
+
+        <a href="flexbox.html" class="read-more">Explore the Flexbox layout</a>
+    </div>
+</div>
+
+<div class="blog-preview">
+    <img src="images/MailDente.png" alt="A box of pasta labeled Mail Dente from the Food from E-Bay series.">
+
+    <div class="blog-text">
+        <p class="date">October 30, 2025</p>
+
+        <h2 class="post-title">CSS Grid: Gallery of Shipped Snacks</h2>
+
+        <p class="post-preview">
+            The Grid page turns the different Food from E-Bay boxes into a small gallery. Each cell pairs a quote with an
+            image, showing how CSS Grid can balance text and visuals in a simple, repeatable structure.
+        </p>
+
+        <a href="grid.html" class="read-more">View the Grid gallery</a>
+    </div>
+</div>
+</main>
+
+</div>
+
+    <footer class="footer">
+        <p>&copy; <span id="year"></span> Ethan Gibson</p>
+            <script>
+                document.getElementById("year").textContent = new Date().getFullYear();
+            </script>
+        <label for="email">Leave your Email (WIP)</label>
+        <input a=focus type="email" id="email" name="email" placeholder="email@example.com">
+        <div class="social-icons">
+            <img src="images/LogoInstagram.png" alt="Instagram logo">
+            <img src="images/LogoYouTube.png" alt="YouTube logo">
+        </div>
+
+        <ul class="use-cases">
+            <li>Concept Photography</li>
+            <li>Packaging Experiments</li>
+            <li>Fake Product Design</li>
+            <li>Dark Humor Projects</li>
+        </ul>
+
+        <ul class="product">
+            <li>Food from E-Bay Series</li>
+            <li>Behind-the-Scenes Shots</li>
+            <li>Layout Studies</li>
+            <li>Process Sketches</li>
+        </ul>
+
+        <ul class="resources">
+            <li>Flexbox Practice</li>
+            <li>Grid Practice</li>
+            <li>Project Reflection</li>
+            <li>Contact</li>
+        </ul>
+    </footer>
+    
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    </body>
+
+</html>
