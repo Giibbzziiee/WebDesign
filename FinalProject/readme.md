@@ -10,3 +10,5 @@ I am proud of how much personality I was able to bring into this site. The Food 
 ## What would you add or refine in the future?
 
 If I had more time, I would focus on polishing the visual side of the site even more. I would tighten up the typography, improve spacing, and smooth out some of the animations so the whole design feels more unified. I would also expand the blog section and make the gallery easier to update without editing the HTML every time. Now that I understand the full process of building a site from structure to styling to responsiveness to JavaScript interaction and deployment, I feel more confident about creating something even bigger or turning parts of this project into a real portfolio piece later on.
+
+[Back to the Page](https://giibbzziiee.github.io/WebDesign/FinalProject/index.html)
