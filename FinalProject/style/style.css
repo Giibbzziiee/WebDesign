@@ -1,0 +1,523 @@
+body {
+  background-color: #4A2E1E; 
+  color: #1a120c;
+}
+
+.page-wrapper{
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1{
+  color: #c0791d;
+  justify-content: center;
+}
+
+h3{
+  justify-content: center;
+  color: #d5d0dd;
+}
+
+main {
+  flex: 1;
+}
+
+
+/*Banner*/
+
+.parallax-banner {
+  height: 500px;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.parallax-banner-overlay {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.parallax-banner-content {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #faf7e8;
+  text-shadow: 0 0 10px #000;
+}
+
+
+/*Popup*/
+
+
+#popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease;
+
+  background-color: #C8A98B;
+  padding: 10px;
+}
+
+#popup.open {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+@keyframes pulse {
+  0% {transform: scale(1); }
+  50% {transform: scale(1.03); }
+  100% {transform: scale(1);}
+}
+
+#openPopup {
+  animation: pulse 3s ease-in-out infinite;
+}
+
+
+
+/*navigation*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 40px;
+  background-color: #eae7f2;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-logo {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #333;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/*carousel*/
+.carousel-item img {
+  max-height: 680px;
+  align-items: center;
+  object-fit: cover;
+  width: 100%;
+}
+
+.blackout {
+  /*just a random class I made to make text black*/
+  color:#000;
+}
+
+/*featured section*/
+.featured-section{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto auto;
+  gap: 10px;
+  align-items: start;
+}
+
+.blog-preview {
+  background-color: #C8A98B;
+  display: flex; 
+  flex-direction: row; 
+  align-items: center; 
+  gap: 20px; 
+
+  border-radius: 12px;
+  max-width: 80%; 
+  margin: 80px auto; 
+  padding: 30px 40px;
+}
+
+.blog-preview img {
+  width: 40%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 100%;
+}
+
+.blog-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.date {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  color: #666;
+  margin: 0;
+}
+
+.post-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.post-preview {
+  font-family: Arial, Helvetica, sans-serif; 
+  font-size: 0.9rem;
+  color: #6d6d6d;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.read-more {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  color: #4A2E1E;
+  margin-top: 10px;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero {
+  grid-column: 2;
+  grid-row: 1;
+  max-height: auto;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+
+/*cards*/
+.card-section{
+  grid-column: 1 / 3;
+  grid-row: 2;
+  display: flex;
+  gap: 10px;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 10px;
+  padding: 20px;
+  background-color: #C8A98B;
+  border-radius: 12px;
+  max-width: 300px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/*Canvas*/
+
+canvas {
+  display: block;
+  margin: 20px auto;
+  background: #baa48e;
+  border: 5px #4a90e2;
+}
+
+
+/*feature contained blog previews*/
+.featured-section .blog-preview {
+  max-width: 100% !important;
+  margin: 2px 0 !important;
+  padding: 10px 0 !important;
+  gap: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.featured-section .blog-preview img {
+  width: 80px;
+}
+
+.featured-section .blog-text {
+font-size: 0.6rem;
+}
+
+.featured-section .post-preview {
+font-size: 0.6rem;
+line-height: 1;
+}
+
+.featured-section .post-title {
+font-size: 0.8rem;
+line-height: 1;
+}
+
+.featured-section .date {
+font-size: 0.5rem;
+}
+
+.featured-section .read-more {
+margin-top: 0px !important; 
+}
+
+.featured-section .card {
+  height: auto;
+}
+
+.featured-section .card h3 {
+  font-size: 1rem;
+  margin: 0 0;
+}
+
+.featured-section .card p {
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+
+
+
+/*gallery*/
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: auto auto;
+  gap: 10px;
+  margin: auto; 
+  background-color: #4A2E1E;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.item {
+  background-color: #C8A98B;
+  border-radius: 8px;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center;
+}
+
+.item img {
+  padding: 0;
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  
+}
+
+.item p {
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+/*footer*/
+.footer {
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-start;
+  background-color: #d5d0dd; 
+  padding: 30px 100px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer ul {
+  list-style: none; 
+  padding: 0;
+  margin: 0; 
+}
+
+.footer li {
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.social-icons img {
+  width: 22px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+
+
+a:focus, button:focus, input:focus {
+  outline: 2px solid #4a90e2;
+  outline-offset: 2px;
+}
+
+
+
+@media (max-width: 600px) {
+  .card-section{
+    flex-direction: column;
+  }
+}
+
+
+@media (min-width: 600px) and (max-width: 1024px) {
+}
+
+/*took some time to learn about scoped styling after hearing someone talk about it in a youtube video. If I did it all right I think
+I wrapped my nav into my inspired component using the following styling. It should only affect my navbar when I use the .main-nav class
+I was going for a crunchyroll type theme. It's not exactly how crunchy roll presents themselves but that's also not really what I was looking for.
+My goal was for the page to look mildly similar but still be my design, just with inspiration.
+
+I also have a friend who has been helping me understand the things we're covering in class. They own their own SEO company and are looking
+to do an intership with me, then potentially hire me post graduation. I'm pretty stoked.*/
+
+.main-nav {
+  background-color: #2e241c;
+  padding-block: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.35);
+  font-family: Arial, Helvetica, sans-serif;
+  z-index: 1000;
+}
+
+.main-nav .nav-logo {
+  height: 32px;
+  width: auto;
+  border-radius: 6px;
+}
+
+.main-nav .brand-text {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #f1e5d2;
+  letter-spacing: 0.03em;
+}
+
+.main-nav .navbar-brand:hover .brand-text {
+  color: #ffffff;
+}
+
+.main-nav .nav-links .nav-link {
+  color: #e8d6c1;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-weight: 500;
+  transition: 0.15s ease;
+}
+
+.main-nav .nav-links .nav-link:hover,
+.main-nav .nav-links .nav-link.active {
+  background-color: rgba(255,255,255,0.1);
+  color: #ffffff;
+}
+
+.main-nav .dropdown-menu {
+  background-color: #3a2f26;
+  border-color: #524438;
+}
+
+.main-nav .dropdown-item {
+  color: #f1e5d2;
+}
+
+.main-nav .dropdown-item:hover {
+  background-color: #524438;
+  color: #ffffff;
+}
+
+.nav-search {
+  background-color: #3e332b;
+  border-radius: 999px;
+  padding: 3px 10px;
+}
+
+.nav-search-input {
+  background: transparent;
+  border: none;
+  color: #f1e5d2;
+  width: 180px;
+  font-size: 0.9rem;
+}
+
+.nav-search-input::placeholder {
+  color: #baa48e;
+}
+
+.nav-search-input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.nav-search-btn {
+  color: #f1e5d2;
+  font-size: 1rem;
+  background: transparent;
+  border: none;
+  padding-left: 5px;
+}
+
+.nav-search-btn:hover {
+  color: #ffffff;
+}
+
+@media (max-width: 991px) {
+  .nav-search {
+    margin-top: 10px;
+    width: 100%;
+  }
+  .nav-search-input {
+    width: 100%;
+  }
+  .main-nav .nav-links .nav-link {
+    border-radius: 0;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .parallax-banner {
+    background-attachment: scroll;
+    height: 320px;
+  }
+
+  .parallax-banner-content h1 {
+    font-size: 2rem;
+  }
+}
+
+
